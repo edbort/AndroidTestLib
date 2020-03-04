@@ -5,7 +5,7 @@ group='com.github.edbort'
 
 android {
     compileSdkVersion 28
-    buildToolsVersion "29.0.2"
+    //buildToolsVersion "29.0.2"
     defaultConfig {
         minSdkVersion 23
         targetSdkVersion 28
