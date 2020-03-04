@@ -1,12 +1,15 @@
 package io.husky.android.libtest;
 
-import android.util.Log;
+import android.content.Context;
+import android.content.Intent;
+
+import io.husky.android.libtest.activity.AccessActivity;
 
 public class Lib {
 
-    public static String testeLib(String arg1, String arg2) {
-        Log.i("Lib", "arg1: " + arg1);
-        return arg2;
+    public static void criaConta(Context context, String jsonArgs, String callback) {
+        Intent i = new Intent(context, AccessActivity.class);
+        context.startActivity(i);
     }
 
 }
